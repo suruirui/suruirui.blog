@@ -1,0 +1,594 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Foxz" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="在官网下载http://www.yiichina.com/download，选择从归档文件安装，Yii2的基本应用程序模板将下载文件解压到www目录，访问http://localhost/yii/basic/requirements.php检测安装环境访问http://localhost/yii/basic/web/index.php执行安装，如果报错，在config目录下的web.php为coo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="元亨利贞">
+<meta property="og:url" content="http://yoursite.com/2017/05/02/YII2.0使用说明/index.html">
+<meta property="og:site_name" content="元亨利贞">
+<meta property="og:description" content="在官网下载http://www.yiichina.com/download，选择从归档文件安装，Yii2的基本应用程序模板将下载文件解压到www目录，访问http://localhost/yii/basic/requirements.php检测安装环境访问http://localhost/yii/basic/web/index.php执行安装，如果报错，在config目录下的web.php为coo">
+<meta property="og:updated_time" content="2017-05-02T09:22:36.164Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="元亨利贞">
+<meta name="twitter:description" content="在官网下载http://www.yiichina.com/download，选择从归档文件安装，Yii2的基本应用程序模板将下载文件解压到www目录，访问http://localhost/yii/basic/requirements.php检测安装环境访问http://localhost/yii/basic/web/index.php执行安装，如果报错，在config目录下的web.php为coo">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/05/02/YII2.0使用说明/"/>
+
+  <title>  | 元亨利贞 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">元亨利贞</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-guestbook">
+          <a href="/guestbook" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            留言
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-05-02T17:24:03+08:00" content="2017-05-02">
+              2017-05-02
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="在官网下载http-www-yiichina-com-download，选择从归档文件安装，Yii2的基本应用程序模板"><a href="#在官网下载http-www-yiichina-com-download，选择从归档文件安装，Yii2的基本应用程序模板" class="headerlink" title="在官网下载http://www.yiichina.com/download，选择从归档文件安装，Yii2的基本应用程序模板"></a>在官网下载<a href="http://www.yiichina.com/download，选择从归档文件安装，Yii2的基本应用程序模板" target="_blank" rel="external">http://www.yiichina.com/download，选择从归档文件安装，Yii2的基本应用程序模板</a></h2><h2 id="将下载文件解压到www目录，访问http-localhost-yii-basic-requirements-php检测安装环境"><a href="#将下载文件解压到www目录，访问http-localhost-yii-basic-requirements-php检测安装环境" class="headerlink" title="将下载文件解压到www目录，访问http://localhost/yii/basic/requirements.php检测安装环境"></a>将下载文件解压到www目录，访问<a href="http://localhost/yii/basic/requirements.php检测安装环境" target="_blank" rel="external">http://localhost/yii/basic/requirements.php检测安装环境</a></h2><h2 id="访问http-localhost-yii-basic-web-index-php执行安装，如果报错，在config目录下的web-php为cookieValidationKey添加任意值"><a href="#访问http-localhost-yii-basic-web-index-php执行安装，如果报错，在config目录下的web-php为cookieValidationKey添加任意值" class="headerlink" title="访问http://localhost/yii/basic/web/index.php执行安装，如果报错，在config目录下的web.php为cookieValidationKey添加任意值"></a>访问<a href="http://localhost/yii/basic/web/index.php执行安装，如果报错，在config目录下的web.php为cookieValidationKey添加任意值" target="_blank" rel="external">http://localhost/yii/basic/web/index.php执行安装，如果报错，在config目录下的web.php为cookieValidationKey添加任意值</a></h2><h2 id="创建第一个控制器：在controllers下面新建HelloController-php"><a href="#创建第一个控制器：在controllers下面新建HelloController-php" class="headerlink" title="创建第一个控制器：在controllers下面新建HelloController.php:"></a>创建第一个控制器：在controllers下面新建HelloController.php:</h2><pre><code>namespace app\controllers;
+use yii\web\Controller;
+class HelloController extends Controller{
+    public function actionIndex(){
+        echo &apos;hello world&apos;;
+    }
+}
+</code></pre><h2 id="访问创建的HelloController控制器http-localhost-yii-basic-web-index-php-r-hello-index"><a href="#访问创建的HelloController控制器http-localhost-yii-basic-web-index-php-r-hello-index" class="headerlink" title="访问创建的HelloController控制器http://localhost/yii/basic/web/index.php?r=hello/index"></a>访问创建的HelloController控制器<a href="http://localhost/yii/basic/web/index.php?r=hello/index" target="_blank" rel="external">http://localhost/yii/basic/web/index.php?r=hello/index</a></h2><h2 id="使用-req-YII-app-gt-request-创建请求对象-调用-req的get方法处理请求参数-id-req-gt-get-‘id’"><a href="#使用-req-YII-app-gt-request-创建请求对象-调用-req的get方法处理请求参数-id-req-gt-get-‘id’" class="headerlink" title="使用$req = \YII::$app-&gt;request;  创建请求对象,调用$req的get方法处理请求参数$id = $req-&gt;get(‘id’);"></a>使用$req = \YII::$app-&gt;request;  创建请求对象,调用$req的get方法处理请求参数$id = $req-&gt;get(‘id’);</h2><h2 id="使用-req-gt-isGet来判断请求方式是否为get"><a href="#使用-req-gt-isGet来判断请求方式是否为get" class="headerlink" title="使用$req-&gt;isGet来判断请求方式是否为get"></a>使用$req-&gt;isGet来判断请求方式是否为get</h2><h2 id="gt-isPost来判断请求方式是否为post"><a href="#gt-isPost来判断请求方式是否为post" class="headerlink" title="-&gt;isPost来判断请求方式是否为post"></a>-&gt;isPost来判断请求方式是否为post</h2><h2 id="req-gt-userIp获取用户ip"><a href="#req-gt-userIp获取用户ip" class="headerlink" title="$req-&gt;userIp获取用户ip"></a>$req-&gt;userIp获取用户ip</h2><h2 id="处理响应，获得响应组件-res-YII-app-gt-response"><a href="#处理响应，获得响应组件-res-YII-app-gt-response" class="headerlink" title="处理响应，获得响应组件$res = \YII::$app-&gt;response;"></a>处理响应，获得响应组件$res = \YII::$app-&gt;response;</h2><p>$res-&gt;statusCode = ‘404’</p>
+<h3 id="处理响应头"><a href="#处理响应头" class="headerlink" title="处理响应头"></a>处理响应头</h3><pre><code>$res-&gt;headers-&gt;add(&apos;pragma&apos;,&apos;no-cache&apos;);
+$res-&gt;headers-&gt;set(&apos;pragma&apos;,&apos;max-age=5&apos;);
+$res-&gt;header-&gt;remove(&apos;pragma&apos;);
+</code></pre><h3 id="跳转"><a href="#跳转" class="headerlink" title="跳转"></a>跳转</h3><pre><code>$res-&gt;headers-&gt;add(&apos;location&apos;,&apos;http://www.baidu.com&apos;);
+</code></pre><h3 id="重定向"><a href="#重定向" class="headerlink" title="重定向"></a>重定向</h3><pre><code>$this-&gt;redirect(&apos;http://www.baidu.com&apos;,302);
+</code></pre><h3 id="文件下载"><a href="#文件下载" class="headerlink" title="文件下载"></a>文件下载</h3><pre><code>$res-&gt;headers-&gt;add(&apos;content-disposition&apos;,&apos;attachment;filename=&apos;a.jpg&apos;);
+$res-&gt;sendFile(&apos;./b.jpg&apos;);
+</code></pre><h2 id="session使用"><a href="#session使用" class="headerlink" title="session使用"></a>session使用</h2><h2 id="得到session对象-sesssion-YII-app-gt-session"><a href="#得到session对象-sesssion-YII-app-gt-session" class="headerlink" title="得到session对象 $sesssion = \YII::$app-&gt;session;"></a>得到session对象 $sesssion = \YII::$app-&gt;session;</h2><h2 id="session中方法-set-get-remove"><a href="#session中方法-set-get-remove" class="headerlink" title="session中方法 set get remove"></a>session中方法 set get remove</h2><h2 id="以数组的方式操作session"><a href="#以数组的方式操作session" class="headerlink" title="以数组的方式操作session"></a>以数组的方式操作session</h2><pre><code>$session[&apos;username&apos;] = &apos;lisi&apos;;  //set
+echo $session[&apos;username&apos;];  //get
+unset($session[&apos;username&apos;]);  //remove  
+</code></pre><h2 id="cookie使用"><a href="#cookie使用" class="headerlink" title="cookie使用"></a>cookie使用</h2><h2 id="视图-views目录"><a href="#视图-views目录" class="headerlink" title="视图 views目录"></a>视图 views目录</h2><p>在views目录新建hello(需要与控制器名称保持一致)，新建index.php，直接书写html代码<br>在控制器HelloController方法中 return $this-&gt;renderPartial(‘index’);</p>
+<h2 id="视图中的数据传递"><a href="#视图中的数据传递" class="headerlink" title="视图中的数据传递"></a>视图中的数据传递</h2><h3 id="传递变量"><a href="#传递变量" class="headerlink" title="传递变量"></a>传递变量</h3><p>$data数组<br>        $str = ‘hello yii’;<br>        //创建一个数组<br>        $data = array();<br>        //把需要传递给视图的数据。放到数组当中<br>        $data[‘view_str’] = $str;<br>        return $this-&gt;renderPartial(‘index’,$data);<br>在视图文件中直接使用变量&lt;?=$view_str?&gt;</p>
+<h3 id="传递数组"><a href="#传递数组" class="headerlink" title="传递数组"></a>传递数组</h3><p>同传递变量，在视图中直接使用数组&lt;?=$arr[1]?&gt;</p>
+<h3 id="数据安全-防止转义攻击"><a href="#数据安全-防止转义攻击" class="headerlink" title="数据安全,防止转义攻击"></a>数据安全,防止转义攻击</h3><pre><code>use yii\helper\Html;
+use yii\helper\HtmlPurifer;
+&lt;?=Html::encode($str)?&gt;
+&lt;?=HtmlPurifer::process($str)?&gt;
+</code></pre><h3 id="布局文件"><a href="#布局文件" class="headerlink" title="布局文件"></a>布局文件</h3><pre><code>layouts文件夹下
+</code></pre><h2 id="数据模型"><a href="#数据模型" class="headerlink" title="数据模型"></a>数据模型</h2>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/05/02/vue项目初始化/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/avatar.jpg"
+               alt="Foxz" />
+          <p class="site-author-name" itemprop="name">Foxz</p>
+          <p class="site-description motion-element" itemprop="description">Foxz的读书笔记</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">8</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#在官网下载http-www-yiichina-com-download，选择从归档文件安装，Yii2的基本应用程序模板"><span class="nav-number">1.</span> <span class="nav-text">在官网下载http://www.yiichina.com/download，选择从归档文件安装，Yii2的基本应用程序模板</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#将下载文件解压到www目录，访问http-localhost-yii-basic-requirements-php检测安装环境"><span class="nav-number">2.</span> <span class="nav-text">将下载文件解压到www目录，访问http://localhost/yii/basic/requirements.php检测安装环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#访问http-localhost-yii-basic-web-index-php执行安装，如果报错，在config目录下的web-php为cookieValidationKey添加任意值"><span class="nav-number">3.</span> <span class="nav-text">访问http://localhost/yii/basic/web/index.php执行安装，如果报错，在config目录下的web.php为cookieValidationKey添加任意值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建第一个控制器：在controllers下面新建HelloController-php"><span class="nav-number">4.</span> <span class="nav-text">创建第一个控制器：在controllers下面新建HelloController.php:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#访问创建的HelloController控制器http-localhost-yii-basic-web-index-php-r-hello-index"><span class="nav-number">5.</span> <span class="nav-text">访问创建的HelloController控制器http://localhost/yii/basic/web/index.php?r=hello/index</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用-req-YII-app-gt-request-创建请求对象-调用-req的get方法处理请求参数-id-req-gt-get-‘id’"><span class="nav-number">6.</span> <span class="nav-text">使用$req = \YII::$app->request;  创建请求对象,调用$req的get方法处理请求参数$id = $req->get(‘id’);</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用-req-gt-isGet来判断请求方式是否为get"><span class="nav-number">7.</span> <span class="nav-text">使用$req->isGet来判断请求方式是否为get</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#gt-isPost来判断请求方式是否为post"><span class="nav-number">8.</span> <span class="nav-text">->isPost来判断请求方式是否为post</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#req-gt-userIp获取用户ip"><span class="nav-number">9.</span> <span class="nav-text">$req->userIp获取用户ip</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#处理响应，获得响应组件-res-YII-app-gt-response"><span class="nav-number">10.</span> <span class="nav-text">处理响应，获得响应组件$res = \YII::$app->response;</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#处理响应头"><span class="nav-number">10.1.</span> <span class="nav-text">处理响应头</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#跳转"><span class="nav-number">10.2.</span> <span class="nav-text">跳转</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重定向"><span class="nav-number">10.3.</span> <span class="nav-text">重定向</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件下载"><span class="nav-number">10.4.</span> <span class="nav-text">文件下载</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#session使用"><span class="nav-number">11.</span> <span class="nav-text">session使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#得到session对象-sesssion-YII-app-gt-session"><span class="nav-number">12.</span> <span class="nav-text">得到session对象 $sesssion = \YII::$app->session;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#session中方法-set-get-remove"><span class="nav-number">13.</span> <span class="nav-text">session中方法 set get remove</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#以数组的方式操作session"><span class="nav-number">14.</span> <span class="nav-text">以数组的方式操作session</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#cookie使用"><span class="nav-number">15.</span> <span class="nav-text">cookie使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#视图-views目录"><span class="nav-number">16.</span> <span class="nav-text">视图 views目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#视图中的数据传递"><span class="nav-number">17.</span> <span class="nav-text">视图中的数据传递</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#传递变量"><span class="nav-number">17.1.</span> <span class="nav-text">传递变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#传递数组"><span class="nav-number">17.2.</span> <span class="nav-text">传递数组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据安全-防止转义攻击"><span class="nav-number">17.3.</span> <span class="nav-text">数据安全,防止转义攻击</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#布局文件"><span class="nav-number">17.4.</span> <span class="nav-text">布局文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据模型"><span class="nav-number">18.</span> <span class="nav-text">数据模型</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Foxz</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
